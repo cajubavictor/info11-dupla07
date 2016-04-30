@@ -32,7 +32,7 @@ int main(void)
     {
         if((cent==1 && dez==0 && unid==0)||(cent==0 && dez==1 && unid==0)||(cent==0 && dez==0 && unid==1))
             printf("000\n"); /* caso em que o computador perde*/
-                                /* a partir da proxima linha verifica qual o numero da jogada e maior e retira 1 dele*/
+                                /* a partir da proxima sequencia de ifs verifica qual o numero da jogada e maior e retira 1 dele*/
         if(cent>dez && cent>unid)
         {
             cent = cent - 1;
