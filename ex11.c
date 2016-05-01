@@ -56,6 +56,7 @@ int main(void)
         } 
         if(jogada!=0)//dar nim perfeita
         {
+            
             if((cent==0&&dez==0&&unid!=0))
                 printf("001\n");
             if((cent==0&&dez!=0&&unid==0))
@@ -75,6 +76,15 @@ int main(void)
                     if(((cent==1)&&(dez==1))&&(unid==1))
                         printf("101\n");
                 }
+                if((cent==1&&dez==2&&unid==2)||(cent==2&&dez==1&&unid==2)||(cent==2&&dez==2&&unid==1))
+                {    
+                    if((cent==1&&dez==2&&unid==2))
+                        printf("121\n");
+                    if((cent==2&&dez==1&&unid==2))
+                        printf("112\n");
+                    if((cent==2&&dez==2&&unid==1))
+                        printf("211\n");
+                }    
                 else
                 {
                     for(x=1;x<=unid;x++)
