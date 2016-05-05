@@ -42,13 +42,13 @@ int main(void)
                 cent = cent - 1;
                 printf("%d%d%d\n",cent,dez,unid);
             }
-            if(dez>cent && dez>unid)
+            if(dez>=cent && dez>unid)
             {
                 dez = dez - 1;
                 printf("%d%d%d\n",cent,dez,unid);
             }
 
-            if(unid>cent && unid>dez)
+            if(unid>=cent && unid>=dez)
             {
                 unid = unid - 1;
                 printf("%d%d%d\n", cent,dez,unid);
@@ -76,15 +76,6 @@ int main(void)
                     if(((cent==1)&&(dez==1))&&(unid==1))
                         printf("101\n");
                 }
-                if((cent==1&&dez==2&&unid==2)||(cent==2&&dez==1&&unid==2)||(cent==2&&dez==2&&unid==1))
-                {    
-                    if((cent==1&&dez==2&&unid==2))
-                        printf("121\n");
-                    if((cent==2&&dez==1&&unid==2))
-                        printf("112\n");
-                    if((cent==2&&dez==2&&unid==1))
-                        printf("211\n");
-                }    
                 else
                 {
                     for(x=1;x<=unid;x++)
